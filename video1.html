@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <button onclick="playpause()">Play/pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button> <br> <br>
+
+        <video id="video1" width="400">
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source  src="mov_bbb.ogg" type="video/mp4">
+            your browser does not support html video
+        </video>
+
+    </div>
+
+    <script>
+        var myvideo= document.getElementById("video1");
+
+        function playpause(){
+            if(myvideo.paused){
+                myvideo.play();
+            }
+            else{
+                myvideo.pause();
+            }
+        }
+
+        function makeBig(){
+            myvideo.width="1000";
+        }
+
+        function makeSmall(){
+            myvideo.width="300";
+        }
+
+        function makeNormal(){
+            myvideo.width="400";
+        }
+    </script>
+
+    <p> Video courtesy of link <a href="https://www.bigbuckbunny.org/" target="_blank">Big buck bunny</a></p>
+    
+</body>
+</html>

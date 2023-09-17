@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Vowels=["a","e","i","o","u","A","E","I","O","U"];
+        function countvowels(sentence){
+            let count=0;
+            const letters=Array.from(sentence);
+            letters.forEach(function(value){
+                if (Vowels.includes(value)) {
+                    count++;
+                }
+            })
+            return count;
+        }
+        console.log(countvowels("I am Gausul Islam Hemonto"));
+    </script>
+</body>
+</html>

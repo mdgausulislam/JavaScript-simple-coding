@@ -1,0 +1,25 @@
+a:link {
+    color: brown;
+    background-color: coral;
+    text-decoration: blue;
+}
+
+a:visited {
+    color: green;
+    background-color: chocolate;
+    text-decoration: chartreuse;
+}
+
+a:hover {
+    color: aqua;
+    background-color: beige;
+    text-decoration: darkblue;
+}
+
+a:active {
+    color: aquamarine;
+    background-color: cornflowerblue;
+    text-decoration: blueviolet;
+}
+
+p {background-image: url(DJI_0003-1.jpg);}

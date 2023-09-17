@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World");
+
+        let x=153;
+        let sum=0;
+        let temp=x;
+        while (temp>0) {
+            let remainder=temp%10;
+            sum+= remainder*remainder*remainder;
+            temp=parseInt(temp/10);
+        }
+
+        if(sum==x){
+            console.log(`${x} is the armostrang Number`);
+        }else{
+            console.log(`${x} is the armostrang Number`);
+        }
+    </script>
+</body>
+</html>

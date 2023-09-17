@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(fname,lname,age){
+            this.finame=fname;
+            this.laname=laname;
+            this.age=age;
+            this.fullName=function(){
+                return this.finame +" "+ this.laname;
+            }
+        }
+
+        const hemonto=new person("Md Gousul Islam","Hemonto",25);
+        const hemonto1=new person("Md Gousul","Islam",24);
+        const hemonto2=new person("Hemonto","Hemonto",23);
+    </script>
+</body>
+</html>

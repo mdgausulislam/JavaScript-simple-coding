@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            fullName:function(city,country){
+            return this.firstName+" "+ this.lastName+" "+ city+" "+ country;
+        }}
+        const person1={
+            firstName:"Md GOusul Islam",
+            lastName:"Hemonto"
+        }
+        console.log(person.fullName.apply(person1,["Dhaka","Bangladesh"]));
+
+        console.log(Math.max(1,2,3));
+        console.log(Math.max.apply(null,[1,2,5,78,8,89,56]));
+
+    </script>
+</body>
+</html>

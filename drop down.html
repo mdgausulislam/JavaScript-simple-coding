@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  body img{
+    height: 60px;
+    width:60px;
+    border: 5px solid blue;
+    border-radius: 24px;
+} *
+.dropdow{
+  position: relative;
+}
+
+/* .btn{
+padding: 0.5rem 1.5rem;
+border: none;
+outline: none;
+background-color: red;
+color: white;
+border-radius: 5px;
+}
+.btn.active{
+  box-shadow: 0 0 0 0.125rem rgba(13, 128, 250, 0.5);
+} */
+.dropdown-content{
+  position: absolute;
+  width: 150px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px 0 #ccc;
+
+}
+.dropdown{
+  top: 100%;
+  margin-top: 0.125rem;
+}
+.dropdown-content a{
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #343434;
+}
+.dropleft{
+  right: 100%;
+}
+
+
+/*   */
+</style>
+</head>
+<body>
+ 
+<div class="dropdow">
+  <a href="#"><img src="family-dentistry-in-moorpark.jpg"></a>
+  <div class="dropdown-content dropleft" id="dropleft">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div>
+  
+</div>
+</body>
+</html>

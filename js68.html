@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(first,last,age,eye){
+            this.firstname=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyecolor=eye;
+        }
+        const hemo=new person("Md Gousul","Islam",24,"Black");
+
+        person.prototype.country="Bangladesh"
+        console.dir(hemo);
+
+    </script>
+</body>
+</html>

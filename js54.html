@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            employes:[
+            {"fname":"hemo", "lname":"Hemo"},
+            {"fname":"hemo", "lname":"Hemo"},
+            {"fname":"hemo", "lname":"Hemo"},
+            {"fname":"hemo", "lname":"Hemo"}
+
+            ]
+        };
+        //console.log(employes);
+        console.log(person);
+
+
+        let  text= '{"employ":[' + 
+            '{"faname": "Hemonto", "laname":"Hemo"},'+
+            '{"faname": "Hemonto", "laname":"Hemo"},'+
+            '{"faname": "Hemonto", "laname":"Hemo"},'+
+            '{"faname": "Hemonto", "laname":"Hemo"}]}';
+
+            const obj=JSON.parse(text);
+            console.log(obj);
+            console.log(text);
+
+            console.log(obj.employ[0].faname);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const sentence ="learn with Sumit is all about teaching web development skills and techniques in an efficient and practical manner. if you are just getting started in web development, Learn with Sumit has all the tools you need to learn the newest and most popular technologies to convert you from a no-stack to a full-stack developer. Lear with Sumit also deep dives onto advanced topics using the latest best practices for you seasoned web developer.";
+
+       const matches=sentence.match(/sumit/gi);
+        const occurances=matches?matches.length:0;
+       console.log(occurances);
+
+       let position=sentence.search(/sumit/i);
+        position=position>=0 ? position:"not Found";
+       console.log(position);
+    </script>
+</body>
+</html>

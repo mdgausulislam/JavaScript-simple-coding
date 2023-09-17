@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const status=true;
+    console.log("Task 1");
+        //Promise Defination
+        const promise=new Promise(function(resolve,reject){
+
+            setTimeout(function(){
+                if(status){
+                    resolve("task 2 ")
+                }else{
+                    reject("failed")
+                }
+            },2000)
+        });
+        //Promise Call
+        promise .then(function(value){
+            console.log(value);
+        })
+        .catch(function(err){
+            console.log(err);
+        })
+         
+    
+   
+    console.log("Task 3");
+    </script>
+</body>
+</html>

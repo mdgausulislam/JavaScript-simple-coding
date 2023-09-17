@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main{
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),
+            url(massimiliano-morosinotto-pv7hY0HYPC4-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+        .navbar{
+             width: 1200px;
+             height: 75px;
+             margin: auto;       
+        }
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+        .Logo{
+            color: chocolate;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .menu{
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            font-size: 14px;
+            margin-top: 27px;
+        }
+        ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover{
+            color: chocolate;
+        }
+
+        .search{
+            width: 330px;
+            float: left;
+            margin-left: 270px;
+            
+        }
+        .srch{
+            background: transparent;
+            width: 200px;
+            height: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid orange;
+            margin-top: 13px;
+            color: white;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            margin-top: 13px;
+            background: orange;
+            border: 2px solid orange;
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .srch:focus{
+            outline: none;
+        }
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: white;
+            position: relative;
+        }
+        .content .par {
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        .content h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+        }
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background: orange;
+            border: none;
+            margin-bottom: 10px;
+            font-size: 18px;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: .4s ease;
+        }
+        .content .cn a{
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s ease;
+
+        }
+        .cn:hover{
+            background-color: white;
+        }
+
+        .content span{
+            color: orange;
+        }
+
+        .from{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50% );
+            position: absolute;
+            top: -20px;
+            left: 870px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .from h1{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: orange;
+            font-size: 22px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+        .from input{
+            width: 240px;
+            height: 40px;
+            background: transparent;
+            border-bottom: 1px solid orange;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+        .from input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btnn{
+            width: 240px;
+            height: 40px;
+            background-color: orange;
+            margin-top: 30px;
+            border-radius: 15px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: 0.4s ease;
+        }
+        .btnn a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .btnn:focus{
+            outline: none;
+        }
+        .btnn:hover{
+            background: white;
+            color: orange;
+        }
+        .from .link{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 17px;
+        }
+
+        .from .link a{
+            text-decoration: none;
+            color: orange;
+        }
+
+        .from .liw{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+
+        .from .liw a{
+            text-decoration: none;
+            color: orange;
+        }
+
+        .icon a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .icon ion-icon{
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+        .icon ion-icon:hover{
+            color: orange;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="Logo"> Hemonto </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Web Design & <br> <span> Debelopment</span> <br> Course</h1>
+            <p class="par">The HTML span element is a generic inline container for inline elements and content.<br>
+                 It is used to group elements for styling purposes (by using the class or id attributes),<br>
+                 A better way to use it when no other semantic element is available.</p>
+
+                 <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="from">
+                    <h1>LOGIN</h1>
+                    <input type="email" name="email" id="" placeholder="Enter YOur Email">
+                    <input type="password" name="password" id="" placeholder="Enter your Password">
+                    <button class="btnn"><a href="#">LOGIN</a></button>
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign Up </a></p>
+                  <p class="liw">Log in with</p>
+
+                  <div  class="icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                  </div>
+                </div>     
+        </div>
+    </div>  
+
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
