@@ -6,44 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        class car{
-            constructor(brand){
-                this.carName=brand;
-            }
-            present(){
-                return 'I have a '+ this.carName;
-            }
-        }
-
-        class Model extends car{
-            constructor(brand,mod){
-                super(brand);
-                this.model=mod;
-            }
-            show(){
-                return this.present() + ' car and it is model name ' + this.model;
-            }
-        }
-        let Mycar=new Model("Ford","Mustang");
-        console.log(Mycar);
-        console.log(Mycar.show());
-
-
-        class car1{
-            constructor(brand){
-                this.carName1=brand;
-            }
-            get carn(){
-                return this.carName1;
-            }
-            set carn(x){
-                this.carName1=x;
-            }
-        }
-        let myCar=new car1("Ford");
-        myCar.carn="Volvo";
-        console.log(myCar);
+    <script src="js79.js">
+       
     </script>
 </body>
 </html>
